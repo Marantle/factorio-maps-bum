@@ -53,7 +53,7 @@ console.log(b);
 var mymap = L.map(
 	'mapid', {
 		crs: L.CRS.Simple,
-		maxZoom: 10,
+		maxZoom: 9,
 		minZoom: 1,
 		wheelPxPerZoomLevel: 500
 	}).setView([b[0], b[1]], b[2]);
@@ -67,7 +67,7 @@ mymap.on('moveend', function (e) {
 // 9 zoom levels
 L.tileLayer("{z}/{y}/{x}.jpg", {
     minZoom: 1,  // Limit the minimum zoom level
-    maxZoom: 10,  // Limit the maximum zoom level
+    maxZoom: 9,  // Limit the maximum zoom level
     tileSize: 256, // Adjust the tile size if necessary
     noWrap: true  // Prevents the map from repeating beyond the tile boundaries
 }).addTo(mymap);
